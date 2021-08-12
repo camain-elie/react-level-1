@@ -1,0 +1,18 @@
+ul{
+    list-style: none; 
+    padding: 0;
+}
+
+.checkbox-list{
+    text-align: left;
+    margin: auto;
+    width: max-content ;
+}
+
+.checkbox-list input{
+    margin-right: 1em;
+}
+
+.checkbox-list li:first-child{
+    margin-bottom: 1em;
+}

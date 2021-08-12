@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import CheckboxList from './components/ChecboxList';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const checkboxArray = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+
+    return (
+        <div className="App">
+
+            <CheckboxList checkboxArray={checkboxArray} />
+      
+        </div>
+    );
 }
 
 export default App;
