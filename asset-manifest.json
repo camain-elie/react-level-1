@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/checkboxes/static/css/main.a1a0f0bf.chunk.css",
-    "main.js": "/checkboxes/static/js/main.cf203ead.chunk.js",
-    "main.js.map": "/checkboxes/static/js/main.cf203ead.chunk.js.map",
-    "runtime-main.js": "/checkboxes/static/js/runtime-main.a74ae4ed.js",
-    "runtime-main.js.map": "/checkboxes/static/js/runtime-main.a74ae4ed.js.map",
-    "static/js/2.228b7006.chunk.js": "/checkboxes/static/js/2.228b7006.chunk.js",
-    "static/js/2.228b7006.chunk.js.map": "/checkboxes/static/js/2.228b7006.chunk.js.map",
-    "static/js/3.10ba8947.chunk.js": "/checkboxes/static/js/3.10ba8947.chunk.js",
-    "static/js/3.10ba8947.chunk.js.map": "/checkboxes/static/js/3.10ba8947.chunk.js.map",
-    "index.html": "/checkboxes/index.html",
-    "static/css/main.a1a0f0bf.chunk.css.map": "/checkboxes/static/css/main.a1a0f0bf.chunk.css.map",
-    "static/js/2.228b7006.chunk.js.LICENSE.txt": "/checkboxes/static/js/2.228b7006.chunk.js.LICENSE.txt"
+    "main.css": "/react-level-1/static/css/main.a1a0f0bf.chunk.css",
+    "main.js": "/react-level-1/static/js/main.cf203ead.chunk.js",
+    "main.js.map": "/react-level-1/static/js/main.cf203ead.chunk.js.map",
+    "runtime-main.js": "/react-level-1/static/js/runtime-main.f0def749.js",
+    "runtime-main.js.map": "/react-level-1/static/js/runtime-main.f0def749.js.map",
+    "static/js/2.228b7006.chunk.js": "/react-level-1/static/js/2.228b7006.chunk.js",
+    "static/js/2.228b7006.chunk.js.map": "/react-level-1/static/js/2.228b7006.chunk.js.map",
+    "static/js/3.10ba8947.chunk.js": "/react-level-1/static/js/3.10ba8947.chunk.js",
+    "static/js/3.10ba8947.chunk.js.map": "/react-level-1/static/js/3.10ba8947.chunk.js.map",
+    "index.html": "/react-level-1/index.html",
+    "static/css/main.a1a0f0bf.chunk.css.map": "/react-level-1/static/css/main.a1a0f0bf.chunk.css.map",
+    "static/js/2.228b7006.chunk.js.LICENSE.txt": "/react-level-1/static/js/2.228b7006.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a74ae4ed.js",
+    "static/js/runtime-main.f0def749.js",
     "static/js/2.228b7006.chunk.js",
     "static/css/main.a1a0f0bf.chunk.css",
     "static/js/main.cf203ead.chunk.js"
