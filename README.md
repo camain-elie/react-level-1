@@ -1,70 +1,111 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">react-level-2 - Github-user-search</h1>
 
-## Available Scripts
+<div align="center">
+   Solution for Technical test</a>.
+</div>
 
-In the project directory, you can run:
+<div align="center">
+  <h3>
+    <a href="https://camain-elie.github.io/react-level-1/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/camain-elie/react-level-1">
+      Solution
+    </a>
+  </h3>
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-### `npm test`
+<!-- OVERVIEW -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
 
-### `npm run build`
+![screenshot](./public/project-overview.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was made to complete a frontend technical test for a job application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instructions
+Create an input text in which as the user types in, launch a search against Github users and return a result list.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### The subject
 
-### `npm run eject`
+- Query against Github Api: GET https://api.github.com/search/users?q={USER}.
+- Try to not add any dependency library on a freshly created create react app.
+- Don't forget to check against modern ways to make HTTP requests on frontend side.
+- Bonus: manage edge cases (no results, github api rate limit)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Guidelines
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use React.js to render the view
+- Push your code to a Github repository
+- Document what you've done
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Built With
 
-## Learn More
+As asked in the guidelines, I did not use any dependency librairy. Therefore no css preprocessor or fetch library (like axios) where used, only React and Create-React-App.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React](https://reactjs.org/)
+- [Create-React-App](https://create-react-app.dev/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
+You can find the source code of the application in the /src folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create an input text in which as the user types in, launch a search against Github users and return a result list.
+    --> Done, to increase the number of result shown to the user, a page system (adapted from a previous project) was added; 
 
-### Analyzing the Bundle Size
+1. Query against Github Api: GET https://api.github.com/search/users?q={USER}.
+    --> To make request to the Github API, I used the fetch() function with promises in a seperate file /services/github.js.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Try to not add any dependency library on a freshly created
+   [create react app](https://github.com/facebook/create-react-app).
+    --> Only a few developpement dependencies.
 
-### Making a Progressive Web App
+3. Don't forget to check against modern ways to make HTTP requests on frontend side.
+    --> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Bonus: manage edge cases (no results, github api rate limit)
+    --> The user gets a message when an error occurs, no results are found or the api rate limit is reached.
+    Moreover, to reduce the impact of the api rate limit, a call to the API is send only when the user stops typing for more than one second (instead of every time a key is pressed).
 
-### Advanced Configuration
+## How To Use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- Example: -->
 
-### Deployment
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+# Clone this repository
+$ git clone https://github.com/camain-elie/react-level-2
 
-### `npm run build` fails to minify
+# Install dependencies
+$ npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Run the app
+$ npm start
+```
+
+## Acknowledgements
+
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
+
+- [Stackoverflow - a few answers helped me a lot as usual](https://stackoverflow.com/)
+- [React.js](https://fr.reactjs.org/)
+- [Github API](https://docs.github.com/en/rest/reference/search#search-users)
+
+## Contact
+
+- GitHub [@camain-elie](https://github.com/camain-elie)
