@@ -1,5 +1,5 @@
 
-<h1 align="center">react-level-2 - Github-user-search</h1>
+<h1 align="center">react-level-1 - Checkboxes</h1>
 
 <div align="center">
    Solution for a Technical test</a>.
@@ -22,6 +22,9 @@
 ## Table of Contents
 
 - [Overview](#overview)
+  - [Instructions](#instructions)
+  - [The Subject](#the-subject)
+  - [Guidelines](#guidelines) 
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
@@ -37,14 +40,44 @@
 This project was made to complete a frontend technical test for a job application.
 
 ### Instructions
-Create an input text in which as the user types in, launch a search against Github users and return a result list.
+
+Build a simple **React** application to handle multiple selection in lists.
 
 ### The subject
 
-- Query against Github Api: GET https://api.github.com/search/users?q={USER}.
-- Try to not add any dependency library on a freshly created create react app.
-- Don't forget to check against modern ways to make HTTP requests on frontend side.
-- Bonus: manage edge cases (no results, github api rate limit)
+1. Display 5 checkboxes
+2. The first one will select/unselect every checkboxes
+3. The others will select themselves
+4. Checking all items will select the "select all" checkbox automatically
+
+**Some possible cases:**
+
+```m
+[ ] Select all
+
+[ ] Item 1
+[ ] Item 2
+[ ] Item 3
+[ ] Item 4
+```
+
+```m
+[x] Select all
+
+[x] Item 1
+[x] Item 2
+[x] Item 3
+[x] Item 4
+```
+
+```m
+[ ] Select all
+
+[x] Item 1
+[ ] Item 2
+[x] Item 3
+[x] Item 4
+```
 
 ### Guidelines
 
@@ -52,10 +85,9 @@ Create an input text in which as the user types in, launch a search against Gith
 - Push your code to a Github repository
 - Document what you've done
 
-
 ### Built With
 
-As asked in the guidelines, I did not use any dependency librairy. Therefore no css preprocessor or fetch library (like axios) where used, only React and Create-React-App.
+As asked in the guidelines, I did not use any dependency librairy. Therefore no css preprocessor only React and Create-React-App.
 
 - [React](https://reactjs.org/)
 - [Create-React-App](https://create-react-app.dev/)
@@ -64,26 +96,19 @@ As asked in the guidelines, I did not use any dependency librairy. Therefore no 
 
 You can find the source code of the application in the /src folder.
 
-Create an input text in which as the user types in, launch a search against Github users and return a result list.
-    --> Done, to increase the number of result shown to the user, a page system (adapted from a previous project) was added; 
+1. Display 5 checkboxes
+   --> Done, you can display more or less checkboxes if necessary by providing an array of value that will be used to generate the checkbox list.
 
-1. Query against Github Api: GET https://api.github.com/search/users?q={USER}.
-    --> To make request to the Github API, I used the fetch() function with promises in a seperate file /services/github.js.
+2. The first one will select/unselect every checkboxes
+   --> Done. It selects all the checkboxes if at least one of them is unselected, it unselects them otherwise.
 
-2. Try to not add any dependency library on a freshly created
-   [create react app](https://github.com/facebook/create-react-app).
-    --> Only a few developpement dependencies.
+3. The others will select themselves
+   --> Done.
 
-3. Don't forget to check against modern ways to make HTTP requests on frontend side.
-    --> 
-
-4. Bonus: manage edge cases (no results, github api rate limit)
-    --> The user gets a message when an error occurs, no results are found or the api rate limit is reached.
-    Moreover, to reduce the impact of the api rate limit, a call to the API is send only when the user stops typing for more than one second (instead of every time a key is pressed).
+4. Checking all items will select the "select all" checkbox automatically
+   --> Done.
 
 ## How To Use
-
-<!-- Example: -->
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
@@ -99,8 +124,6 @@ $ npm start
 ```
 
 ## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
 - [Stackoverflow - a few answers helped me a lot as usual](https://stackoverflow.com/)
 - [React.js](https://fr.reactjs.org/)
